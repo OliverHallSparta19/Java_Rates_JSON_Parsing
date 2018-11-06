@@ -24,6 +24,15 @@ public class RatesParser {
         return (Double) getRatesJSONObject().get(rateKey);
     }
 
+    //get int
+//    public JSONObject getRatesJSONObject2(){
+//        return (JSONObject) rates.getInt("rates");
+//    }
+//
+//    public int getRate2(String rateKey){
+//        return (int) getRatesJSONObject2().getInt(rateKey);
+//    }
+
     }
 
 

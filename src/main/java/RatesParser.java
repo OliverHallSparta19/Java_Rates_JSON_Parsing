@@ -12,6 +12,18 @@ public class RatesParser {
 
     public String getJSONSuccess(){return getJSONValue("success").toString();}
 
+    public String getJSONBAse(){return getJSONValue("base").toString();}
+
+    public String getJSONDate(){return getJSONValue("date").toString();}
+
+    public JSONObject getRatesJSONObject(){
+        return (JSONObject) rates.get("rates");
+    }
+
+    public Double getRate(String rateKey){
+        return (Double) getRatesJSONObject().get(rateKey);
+    }
+
     }
 
 
